@@ -15,7 +15,7 @@ public class Intake  {
         rightIntake = IntakeMap.dcMotor.get("rightIntake");
         dropdown = IntakeMap.servo.get("dropdown");
     }
-    public void setIntakeSpeed (boolean reverse){
+    public void turnOnIntake (boolean reverse){
         if (reverse){
             leftIntake.setPower(INTAKE_SPEED);
             rightIntake.setPower(-INTAKE_SPEED);
@@ -24,5 +24,10 @@ public class Intake  {
             leftIntake.setPower(-INTAKE_SPEED);
             rightIntake.setPower(INTAKE_SPEED);
         }
+    }
+
+    public void turnOffIntake(){
+        leftIntake.setPower(0);
+        rightIntake.setPower(0);
     }
 }
