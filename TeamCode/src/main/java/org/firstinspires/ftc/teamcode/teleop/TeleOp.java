@@ -19,20 +19,20 @@ public class TeleOp extends OpMode {
 
     @Override
     public void loop() {
+        if (gamepad1.dpad_down || gamepad1.b ){
 
+        }
         // Foundation Pullers
-        if (gamepad1.a) {
-            foundationPullers.toggleFoundationPullerPos(gamepad1.a);
+        if (gamepad1.x) {
+            foundationPullers.toggleFoundationPullerPos(gamepad1.x);
         }
-
         // Capstone
-        if (gamepad1.b) {
-            capstone.setCapstoneState(gamepad1.b);
+        if (gamepad1.y) {
+            capstone.setCapstoneState(gamepad1.y);
         }
-
         // Outtake
-        if (gamepad2.a || gamepad2.b || gamepad2.dpad_up) {
-            outtake.setOuttakeState(gamepad2.a, gamepad2.b, gamepad2.dpad_up);
+        if (gamepad1.dpad_left || gamepad1.dpad_right || gamepad1.dpad_up) {
+            outtake.setOuttakeState(gamepad1.dpad_left, gamepad1.dpad_right, gamepad2.dpad_up);
         }
 
 

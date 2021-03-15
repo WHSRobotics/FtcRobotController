@@ -87,7 +87,7 @@ public class Outtake {
                         setSlidePositions(Slide_Positions.ONE);
                         elbowStatus = "Pulled Back/Holding";
                         wristStatus = "Closed";
-                        slidesHeight = "Skystone Pickup";
+                        slidesHeight = "Skystone Pickup/Height 1";
                         break;
                     case 1: // Comment when heights are set
                         setSlidePositions(Slide_Positions.TWO);
