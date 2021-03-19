@@ -1,5 +1,4 @@
 package org.firstinspires.ftc.teamcode.subsys;
 
-public class WHSRobotImpl {
-
+public class Robot {
 }
